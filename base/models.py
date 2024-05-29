@@ -1,3 +1,6 @@
+# This file is where you define your data models, 
+# which are Python classes that represent database tables.
+
 from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.deletion import CASCADE

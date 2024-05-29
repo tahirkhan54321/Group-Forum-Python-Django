@@ -1,3 +1,7 @@
+
+# This file is responsible for mapping URL patterns to Python functions (views). 
+# It's where you define the URL routes for your application.
+
 from django.urls import path
 from . import views
 

@@ -1,3 +1,5 @@
+# This file is used to configure application-specific settings and behavior.
+
 from django.apps import AppConfig
 
 
