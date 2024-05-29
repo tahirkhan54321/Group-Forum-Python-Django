@@ -1,9 +1,13 @@
 {% extends 'main.html' %}
 
-{% content block %}
+{% block content %}
 
 <div>
-    <form method="POST" action="">
+    <!-- action blank sends data to current url -->
+    <form method="POST" action="">  
+        <!-- Token is sent alongside the request for security purposes -->
+
+        <input type="submit" value="Submit" />
         {% csrf_token %}
     </form>
 </div>
