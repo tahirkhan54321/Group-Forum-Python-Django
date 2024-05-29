@@ -27,6 +27,9 @@ class Room(models.Model):
     # String representation
     def __str__(self):
         return self.name
+    
+class Meta:
+    ordering = ['-updated', '-created'] # dash is descending order
 
 # This is the messages a user can make
 class Message(models.Model):
