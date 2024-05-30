@@ -20,7 +20,7 @@ class Room(models.Model):
     topic = models.ForeignKey(Topic, on_delete=models.SET_NULL, null=True) # a room can only have one topic
     name = models.CharField(max_length=200)
     description = models.TextField(null=True, blank=True)   # blanks allowed
-    #participants = 
+    participants = models.ManyToManyField(User, related_name='participants', blank=True)
     updated = models.DateTimeField(auto_now=True)   # timestamp for when saved
     created = models.DateTimeField(auto_now_add=True)   # timestamp for when created
 
