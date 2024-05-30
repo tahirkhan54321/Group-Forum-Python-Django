@@ -40,5 +40,5 @@ class Message(models.Model):
     created = models.DateTimeField(auto_now_add=True)   # timestamp for when created
 
     # String representation
-    def __str_(self):
+    def __str__(self):
         return self.body[0:50]
