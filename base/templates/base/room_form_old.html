@@ -1,0 +1,15 @@
+{% extends 'main.html' %} {% block content %}
+
+<div>
+  <!-- action blank sends data to current url -->
+  <form method="POST" action="">
+    <!-- Token is sent alongside the request for security purposes -->
+
+    {% csrf_token %}
+    <!-- wraps a paragraph tag around each form entry (as_p) -->
+    {{form.as_p}}
+    <input type="submit" value="Submit" />
+  </form>
+</div>
+
+{% endblock content %}
